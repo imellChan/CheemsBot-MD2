@@ -1838,7 +1838,7 @@ break
                  let teks = `⬣ *PERSONAL CHAT LIST*\n\nTotal Chat : ${anu.length} Chat\n\n`
                  for (let i of anu) {
                      let nama = store.messages[i].array[0].pushName
-                     teks += `🌷 *Name :* ${nama}\n🌷 *User :* @${i.split('@')[0]}\n🌷 *Chat :* https://wa.me/${i.split('@')[0]}\n\n────────────────────────\n\n`
+                     teks += `🐕 *Name :* ${nama}\n🐕 *User :* @${i.split('@')[0]}\n🐕 *Chat :* https://wa.me/${i.split('@')[0]}\n\n────────────────────────\n\n`
                  }
                  XeonBotInc.sendTextWithMentions(m.chat, teks, m)
              }
@@ -1848,7 +1848,7 @@ break
                  let teks = `⬣ *GROUP CHAT LIST*\n\nTotal Group : ${anu.length} Group\n\n`
                  for (let i of anu) {
                      let metadata = await XeonBotInc.groupMetadata(i)
-                     teks += `🌷 *Name :* ${metadata.subject}\n🌷 *Owner :* @${metadata.owner.split('@')[0]}\n🌷 *ID :* ${metadata.id}\n🌷 *Made :* ${moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n🌷 *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
+                     teks += `🐕 *Name :* ${metadata.subject}\n🐕 *Owner :* @${metadata.owner.split('@')[0]}\n🐕 *ID :* ${metadata.id}\n🐕 *Made :* ${moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n🐕 *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
                  }
                  XeonBotInc.sendTextWithMentions(m.chat, teks, m)
              }
@@ -3039,7 +3039,7 @@ View List Of Messages With ${prefix}listmsg`)
 	        let seplit = Object.entries(global.db.data.database).map(([nama, isi]) => { return { nama, ...isi } })
 		let teks = '「 DATABASE LIST 」\n\n'
 		for (let i of seplit) {
-		    teks += `🌷 *Name :* ${i.nama}\n🌷 *Type :* ${getContentType(i.message).replace(/Message/i, '')}\n────────────────────────\n\n`
+		    teks += `🐕 *Name :* ${i.nama}\n🐕 *Type :* ${getContentType(i.message).replace(/Message/i, '')}\n────────────────────────\n\n`
 	        }
 	        reply(teks)
 	    }
@@ -3317,7 +3317,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🍇All Menu🍇',
+                                    displayText: '🌷Menu🌷',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
@@ -3351,7 +3351,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┌─❖
 │「 Hi 👋 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  How Are You? 😄
+┌┤✑  Siapa Antum? 😄
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
@@ -3377,7 +3377,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🍇All Menu🍇',
+                                    displayText: '.',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
@@ -3518,11 +3518,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
     case 'donasi': case 'donate': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6ba2aed566865a068e91f.jpg' }, caption: `*Hi Bro ${m.pushName}*\n\nDonate Me : \n\n🐶 Fampay : https://telegra.ph/file/6ba2aed566865a068e91f.jpg\n🐶 Paytm : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/916909137213 (Click To Contact)` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/8c466af4c8a2b50954672.jpg }, caption: `*Hi Bro ${m.pushName}*\n\nDonate Me : \n\n🌷 Tasyaa : https://telegra.ph/file/6ba2aed566865a068e91f.jpg\n🌷 Antboy Store : https://telegra.ph/file/cf7ef2e698fd50fceac31.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/916909137213 (Click To Contact)` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
-                reply(`GitHub : https://github.com/DGXeon/CheemsBot-MD2\n Dont Forget To Give Star\n\nYouTube : ${myweb}\nDont Forget To Watch Tutorial`)
+                reply(`GitHub : Kepo Lu ni sc Xeon\n Dont Forget To Give Star\n\nYouTube : ${myweb}\nDont Forget To Watch Tutorial`)
             }
             break
 case 'allmenu': {
