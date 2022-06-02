@@ -21,18 +21,18 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['6283897021821']
-global.premium = ['6283897021821']
-global.ownernomer = '6283897021821'
-global.ownername = '𝙽𝚊𝚗𝚍𝚒𝚇𝙳'
-global.botname = 'NandiBot'
-global.footer = 'NandiBot-MD.'
-global.ig = 'https://github.com/NandiXD'
-global.region = 'Indonesia, Riau, Kuansing'
-global.sc = 'Xnxx.com'
-global.myweb = 'https://youtube.com/channel/UC4LeZnx9C6wvWCs9NHlB04g'
-global.packname = 'NandiBot'
-global.author = 'Nandi🗿'
+global.owner = ['6281358960973']
+global.premium = ['6281358960973']
+global.ownernomer = '6281358960973'
+global.ownername = 'Tsyaa'
+global.botname = 'TsyaaBott'
+global.footer = 'Tsyaa-MD.'
+global.ig = 'https://github.com/TasyaaChann'
+global.region = 'Indonesia, Jatim, Lumajang'
+global.sc = 'Kepo Lu'
+global.myweb = 'kosong.com'
+global.packname = 'TsyaaOg'
+global.author = 'Tsyaaaaa?'
 global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
